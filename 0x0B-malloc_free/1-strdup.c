@@ -5,6 +5,7 @@
  * _strdup - this duplicates to new memory space location
  * @str : char
  * Return : 0 success
+ * The function returns 0 if the process is succeess
  */
 char *_strdup(char *str)
 {
