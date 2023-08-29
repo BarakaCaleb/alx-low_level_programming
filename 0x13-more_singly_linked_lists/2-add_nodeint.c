@@ -1,24 +1,20 @@
 #include "lists.h"
 
 /**
- * add_nodeint - Adds a new node at the beggining of the linked list
+ * add_nodeint - this adds a new node at the beginning of a linked list
+ * @head: the pointer to the first node in the list
+ * @n: the data to insert in that new node
  *
- * @head: The pointer to the first node in the linked list
- *
- * @n: The data to insert in that bew code
- *
- * Return : Pointer to the new node or to NULL
+ * Return: the pointer to the new node, or NULL if it fails
  */
-
-
-listint_t *add_nodeint(listint_t **head, const int n);
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
 
 	new = malloc(sizeof(listint_t));
-
 	if (!new)
 		return (NULL);
+
 	new->n = n;
 	new->next = *head;
 	*head = new;
