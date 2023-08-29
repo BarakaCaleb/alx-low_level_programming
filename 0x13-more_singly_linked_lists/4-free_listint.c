@@ -1,13 +1,10 @@
 #include "lists.h"
 
-
 /**
  * free_listint - frees the linked list
- * @head: lisint_t that is to be freed
+ * @head: listint_t list to be free
  */
-
-
-void free_listint(listint_t *head);
+void free_listint(listint_t *head)
 {
 	listint_t *temp;
 
@@ -18,3 +15,4 @@ void free_listint(listint_t *head);
 		head = temp;
 	}
 }
+
