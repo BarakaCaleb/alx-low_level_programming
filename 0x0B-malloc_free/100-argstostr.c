@@ -1,11 +1,18 @@
 #include "main.h"
 #include <stdlib.h>
+
+
 /**
- * argstostr - the main entry
- * @ac: the int input
- * @av: the double pointer array
+ * argstostr - main entry
+ *
+ * @ac: int input
+ *
+ * @av: double pointer array
+ *
  * Return: 0
  */
+
+
 char *argstostr(int ac, char **av)
 {
 	int i, n, r = 0, l = 0;
